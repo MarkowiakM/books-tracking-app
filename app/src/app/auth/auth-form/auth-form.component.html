@@ -1,0 +1,18 @@
+<form>
+    <svg-icon name="user"></svg-icon>
+    <h2></h2>
+    <span>Incorrect email or password...</span>
+    <p class="input-container">
+        <span>Please, enter correct email</span>
+        <input type="text" name="email" formControlName="email" placeholder="Email" />
+    </p>
+    <p class="input-container">
+        <span>Password must contain at least 8 chars</span>
+        <input type="password" name="password" formControlName="password" placeholder="Password" />
+    </p>
+    <button type="submit">Login</button>
+    <p class="register" *ngIf="type === 'login'">
+        <span>New here?</span>
+        <a routerLink="/register">Register</a>
+    </p>
+</form>

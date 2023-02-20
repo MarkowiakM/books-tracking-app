@@ -1,0 +1,9 @@
+@use '../../../variables.scss' as *;
+
+.container {
+  @include full-page-container();
+}
+
+.inner {
+  @include inner-page-container();
+}
